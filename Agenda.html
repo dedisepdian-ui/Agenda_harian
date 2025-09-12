@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Informasi Pelatihan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background: #0077cc;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* Layout tengah */
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      height: calc(100vh - 160px); /* sisakan ruang untuk header + running text */
+    }
+
+    /* Kolom Jadwal */
+    .jadwal {
+      flex: 2;
+      margin-right: 20px;
+    }
+
+    .agenda {
+      background: rgba(255,255,255,0.08);
+      margin: 10px 0;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .agenda h3 {
+      margin: 0;
+      font-size: 24px;
+      color: #00ccff;
+    }
+
+    .agenda p {
+      font-size: 18px;
+      margin: 5px 0 0;
+    }
+
+    /* Kolom Ketentuan */
+    .ketentuan {
+      flex: 1;
+      border: 1px solid #444;
+      border-radius: 12px;
+      padding: 10px;
+      background: rgba(255,255,255,0.05);
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .ketentuan h2 {
+      text-align: center;
+      font-size: 22px;
+      color: #ffcc00;
+      margin: 10px 0;
+    }
+
+    .ketentuan ul {
+      font-size: 18px;
+      padding-left: 20px;
+    }
+
+    .ketentuan li {
+      margin-bottom: 10px;
+    }
+
+    /* Running text bawah */
+    .marquee-container {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      background: #222;
+      padding: 12px 0;
+      border-top: 3px solid #0077cc;
+      overflow: hidden;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      font-size: 20px;
+      color: #ffeb3b;
+      animation: marquee 20s linear infinite;
+    }
+
+    .marquee-text span {
+      margin-right: 80px;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Judul -->
+  <div class="header">📅 Jadwal & Informasi Pelatihan PPSDM Kemendikdasmen</div>
+
+  <!-- Isi utama -->
+  <div class="main">
+
+    <!-- Kolom Jadwal -->
+    <div class="jadwal">
+      <!-- kolom bisa diisi -->
+      
+    </div>
+
+    <!-- Kolom Ketentuan -->
+    <div class="ketentuan">
+      <h2>📅 Ketua TIM Kerja Pelatihan Teknis </h2>
+      <ul>
+        <li>Kelompok 1 </li>
+        Selasa 2 September Waktu Tentatif<br>
+        Kamis 4 September Waktu Tentatif <br>
+        Senin 8 September Waktu Tentatif <br>
+        <br>
+      </ul>
+    </div>
+	<div class="ketentuan">
+      <h2>📅 Ketua TIM Kerja Pelatihan Latsar dan Kepemimpinan </h2>
+      <ul>
+        <li>Kelompok 1 </li>
+        Selasa 2 September Waktu Tentatif<br>
+        Kamis 4 September Waktu Tentatif <br>
+        Senin 8 September Waktu Tentatif <br>
+        <br>
+      </ul>
+    </div>
+	<div class="ketentuan">
+      <h2>📅 Penanggungjawab Kerumahtanggaan dan Kearsipan </h2>
+      <ul>
+        <li>Kelompok 1 </li>
+        Selasa 2 September Waktu Tentatif<br>
+        Kamis 4 September Waktu Tentatif <br>
+        Senin 8 September Waktu Tentatif <br>
+        <br>
+      </ul>
+    </div>
+ 
+  </div>
+
+  <!-- Running Text Bawah -->
+  <div class="marquee-container">
+    <div class="marquee-text">
+      <span>🚨 .......</span>
+      <span>📑 ....... </span>
+      <span>🍵 .......</span>
+      <span>🙏 .......</span>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
