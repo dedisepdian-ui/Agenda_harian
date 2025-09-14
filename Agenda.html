@@ -79,7 +79,7 @@
       const days = ["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
       const day = days[now.getDay()];
       const date = now.toLocaleDateString("id-ID");
-      const time = now.toLocaleTimeString("id-ID");
+      
       document.getElementById("clock").innerHTML = `${day}, ${date} - ${time}`;
     }
     setInterval(updateClock, 1000);
@@ -90,5 +90,6 @@
   </marquee>
 </body>
 </html>
+
 
 
